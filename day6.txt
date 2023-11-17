@@ -1,0 +1,30 @@
+print("SECURE LOG-IN PAGE ")
+print("+++++++++++++++++++++++++++++")
+username = input("USERNAME > ")
+password = input("PASSWORD > ")
+
+print("")
+print("")
+print("")
+
+if username == "Karel_Robot" and password == "R0b01!":
+  print("Welcome, Karel!")
+  print("")
+  print("")
+  print("")
+  print("Glad your human could read the Captcha today!")
+elif username == "CIP" and password == "Cod3inPlace":
+  print("Welcome, wonderful volunteers of knowledge and wisdom!")
+  print("")
+  print("")  
+  print("")
+  print("You're doing great work for teaching these wannabes!")
+
+elif username == "JoMuffins" and password == "Mull!n$":
+  print("Welcome, Jodie")
+  print("")
+  print("")
+  print("")
+  print("Another day of coding, eh?")
+else:
+  print("Well, you're a problem.")

@@ -1,0 +1,32 @@
+my_name = input("What's your name? ")
+
+
+if my_name == "Karel":
+  print("But you're a robot!")
+
+else:
+  print("")
+  print("")
+  print("Are you human?")
+
+  print("")
+
+  print("")
+
+  print("")
+
+  
+  print("How do you know?")
+  print("Please complete this questionaire to answer: ")
+
+metal_composition = input("Yes or No: Are you made of mostly metal? ")
+if metal_composition == "Yes":
+  print("Yeah, sure, okay. So you like music? ")
+elif metal_composition == "No":
+  print("As a computer, I'm guessing you're not a robot. ")
+else:
+  print("THAT IS NOT A VALID RESPONSE")
+
+music = input(" ")
+
+print("Waiting on pizza to brain fuel this code now")
