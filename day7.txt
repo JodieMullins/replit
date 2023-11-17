@@ -1,0 +1,45 @@
+print("Dr. Who Fan Quiz")
+print("-------------------------------------------------")
+
+# S P A C E 
+print("")
+print("")
+
+print("Which doctor was your favorite?")
+users_fave_doc = input("")
+
+
+# S P A C E 
+print("")
+print("")
+
+if users_fave_doc == "Matt Smith":
+  print("Yeah, of course.")
+  fave_reason = input("Is it the bowtie? ")
+  print("")
+  print("")
+  if fave_reason == "yes":
+    print("It's always the bow-tie!")
+    print("")
+    print("")
+  else:
+    print("It's the fez hat!")
+  
+  
+
+elif users_fave_doc == "David Tenant":
+  print("Are you really that much of a fan?")
+  tenant_fan = input("")
+  print("")
+  print("")
+  if tenant_fan == "yes":
+    print("Cool. Let's watch more Dr. Who!")
+    print("")
+    print("")
+  else: 
+    print("Then what are you doing here?")
+
+else: 
+  print("You aren't really much of a fan, are you?")
+
+
