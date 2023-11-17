@@ -1,0 +1,31 @@
+print(""" Welcome to your adventure simulator. 
+
+I am going to ask you a bunch of questions and then create an epic story with you as the star!
+""")
+
+print("")
+
+print("")
+
+person_name = input("What is your name? ")
+enemy = input("What is your worst enemy’s name? ")
+superpower = input("What is your superpower? ")
+planet_to_travel_to = input("Which planet do you want to travel to? ")
+favorite_food = input("WWhat is your favorite food? ")
+
+
+print("")
+
+print("")
+
+
+print("Hello", person_name, "\b!")
+
+print("")
+
+print("Your ability of", superpower, "will make sure you never have to look at", enemy, "again!" )
+
+print("")
+
+print("Go eat", favorite_food, "as you walk down the streets of", planet_to_travel_to, "and use", superpower, "for good and not evil!")
+
