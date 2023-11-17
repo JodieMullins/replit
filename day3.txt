@@ -1,0 +1,19 @@
+ask_food_name = input("Gimme a food here: ")
+shore_food = "spaghetti"
+name_food = print("Name a food:", shore_food)
+flower_type = "flowers"
+plant_type = print("Name a type of plant:", flower_type, "\b." )
+cooking_method = input("Hey, what's a method of cooking? (grammatically in past tense) ")
+
+utensil = input("What's an item you used in your most DIY project? ")
+
+print("")
+print("")
+
+print(" TODAY'S MENU")
+print("A pile of", ask_food_name, "poured/chopped/"+cooking_method, "on a plate of", shore_food, "sprinked in fried",flower_type, "then beaten, stabbed, and drained of all value by a", utensil, "\b.")
+
+print("")
+print("")
+
+print("A Pauly Shore description of messy food: epicurean savagery")

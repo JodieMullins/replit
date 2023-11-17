@@ -1,0 +1,14 @@
+print("Getting To Know You!")
+print("")
+
+name_input = input("What's your name? ")
+favorite_food = input("What's your favorite food? ")
+favorite_music = input("What's your favorite music? ")
+planet_input = input("What's your favorite planet? ")
+
+print("")
+print("")
+
+print("Hey", name_input, "\b.")
+print("You're probably hungry for", favorite_food, "right about now, huh?")
+print("Let's dance to some", favorite_music, "with", planet_input, "any time","\b.")
