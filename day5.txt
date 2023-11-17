@@ -1,3 +1,5 @@
+# If You're Karel AND You're Metal
+
 my_name = input("What's your name? ")
 
 
