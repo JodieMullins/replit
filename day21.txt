@@ -1,0 +1,103 @@
+"""
+A better way to write this would be to have a list of celebratory words. 
+Import random to randomly select from the phrases.
+Create variables for storage of 1*mult and 2*mult, etc. Potential dict or list for that to pull from. 
+Insert a for loop
+
+
+while True: 
+
+  for i in range(1, 11):
+    print(i, "x", mult, "=")
+"""  
+"""
+for i in range(1, 11):
+  num = i
+
+print(i, "X", mult, "=")
+
+"""
+
+print("Math Game!")
+
+print("") #space
+
+mult = int(input("Name your multiples: "))
+
+print("") #space
+
+print("") #space
+
+counter = 0
+
+
+print("1 X", mult, "=")
+one = int(input("Your answer: "))
+print("") #space
+print("") #space
+if one == (1*mult):
+  counter += 1
+  print("Great job!")
+  print("") #space
+elif one != (1*mult):
+  print("NO! The correct answer is", 1*mult)
+  print("") #space
+
+
+print("2 X", mult, "=")
+two = int(input("Your answer: "))
+print("") #space
+print("") #space
+if two == (2*mult):
+  counter += 1
+  print("More awesome than a opossum")
+  print("") #space
+elif two != (2*mult):
+  print("NO! The correct answer is", 2*mult)
+  print("") #space
+
+
+print("3 X", mult, "=")
+three = int(input("Your answer: "))
+print("") #space
+print("") #space
+if three == (3*mult):
+  counter += 1
+  print("Better than a debtor!")
+  print("") #space
+elif three != (3*mult):
+  print("NO! The correct answer is", 3*mult)
+  print("") #space
+
+
+print("4 X", mult, "=")
+four = int(input("Your answer: "))
+print("") #space
+print("") #space
+if four == (4*mult):
+  counter += 1
+  print("Sauce like a boss!")
+  print("") #space
+elif four != (4*mult):
+  print("NO! The correct answer is", 4*mult)
+  print("") #space
+
+
+print("5 X", mult, "=")
+five = int(input("Your answer: "))
+print("") #space
+print("") #space
+if five == (5*mult):
+  counter += 1
+  print("Spectacular!")
+  print("") #space
+elif five != (5*mult):
+  print("NO! The correct answer is", 5*mult)
+  print("") #space
+  print("") #space
+  print("") #space
+
+
+
+print("You got a total of", counter, "correct! Wow!")
+
