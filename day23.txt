@@ -1,0 +1,66 @@
+"""def rollDice():
+  import random
+  dice = random.randint(1,6)
+  print("You rolled", dice)
+
+rollDice()
+
+print("")
+
+for i in range(100):
+  rollDice()
+"""
+"""
+def ask_user_pass():
+  uname = input("What is your username? ")
+  pword = input("What is your password? ")
+  while uname != "Karel" and pword != "Robot":
+    print("Whoops! I don't recognize that username or password. Try again!")
+    print("")
+    print("")
+    break
+  if uname == "Karel" and pword == "Robot":
+    print("Welcome!")
+    exit()
+    print("")
+    print("")
+    print("")
+ # else:
+#   print("Try again!")
+  #  print("")
+  #  print("")
+"""   
+
+print("Replit Login System")
+
+print("")
+
+print("")
+
+uname = "Karel"
+pword = "Robot"
+
+
+
+
+
+
+
+def ask_pass():
+  uname = input("What is your username? ")
+  pword = input("What is your password? ")
+  while uname != "Karel" and pword != "Robot":
+    print("Whoops! I don't recognize that username or password. Try again!")
+    print("")
+    print("")
+    uname = input("What is your username? ")
+    pword = input("What is your password? ")
+  if uname == "Karel" and pword == "Robot":
+    print("Welcome!")
+    print("")
+    print("")
+    print("")
+
+
+ask_pass()
+
