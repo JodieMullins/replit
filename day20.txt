@@ -1,0 +1,22 @@
+"""
+print("Times Table For Number 13:")
+for i in range(1,13):
+  print(i, "x 13", i*13)
+
+
+print("Countdown")
+for i in range(10, 0, -1):
+  print(i)
+"""
+
+
+start = int(input("What number do you want to start with? "))
+
+end = int(input("What's the last number in your desired output? "))
+
+increment = int(input("How would you prefer these numbers be incremented? "))
+
+print("") #space
+
+for i in range(start, end, increment):
+  print(i)
