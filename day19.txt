@@ -1,0 +1,28 @@
+print("Loan Calculator")
+
+APR = float(.05)
+
+amount_borrowed = 1000
+
+time_years = 10
+
+interest_total = APR * amount_borrowed
+
+percentage_total = amount_borrowed + interest_total
+
+amount_due = 1500
+
+
+for counter in range (time_years):
+  
+  amount_borrowed += interest_total
+  
+  counter += 1
+  print("In year", counter, "amount owed totals", amount_borrowed)
+  print("")
+
+print("") #space
+print("") # space
+
+totrest = amount_due - 1000
+print(totrest)
