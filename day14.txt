@@ -1,0 +1,82 @@
+from getpass import getpass as input
+
+R = "🪨"
+P = "📄"
+S = "✂️"
+
+print(" ROCK   PAPER   SCISSORS")
+
+print("") #space
+print("") #space
+#🪨📄✂️
+print("Instructions: ")
+print("For your choice of weapon, input the first letter as follows:")
+print(""" 
+          R = rock  🪨
+          P = paper 📄
+          S = scissors ✂️ """)
+print("") #space
+print("") #space
+print("") #space
+user1 = input(" Player 1 Chooses ---> ")
+
+player1 = "Player 1"
+
+print("") #space
+print("") #space
+  
+user2 = input(" Player 2 Chooses ---> ")
+
+player2 = "Player 2"
+
+print("") #space
+print("") #space
+print("") #space
+print("") #space
+
+# rock versus paper
+if user1 == "R" and user2 == "P":
+  print(player1, "uses", R, " but this is futile against", player2, "\b's", P)
+
+# paper versus rock
+elif user1 == "P" and user2 == "R":
+  print(player1, "wraps", P, " all round the", R, " of", player2, "for a solid win!")
+
+# paper versus scissors
+elif user1 == "P" and user2 == "S":
+  print("Player 2 cuts Player1 wide open like an ill-guided blade missing its target.")
+  print("Player 1 loses. Sorry.")
+
+# paper and paper draw
+elif user1 == "P" and user2 == "P":
+  print("NOW GO DRAW ON THE PAPER TOGETHER YOU BEST OF BUDS")
+
+# rock and rock draw 
+elif user1 == "R" and user2 == "R":
+  print("PUT THE WEAPONS DOWN. TAKE THEM BACK OUTSIDE. PLAY NICE.")
+
+# rock versus scissors
+elif user1 == "R" and user2 == "S":
+  print("Player 2 put up a good fight with some", S, ", but this game is won by Player 1 and their magnificient", R, " !")
+
+# scissors and scissors draw
+elif user1 == "S" and user2 == "S":
+  print("GO MAKE SOME SNOWFLAKES!")
+
+# scissors versus paper 
+elif user1 == "S" and user2 == "P":
+  print(player2, "is annihilated by the", S, " and might of", player1)
+
+# scissors versus rock
+elif user1 == "S" and user2 == "R":
+  print("In this game,", Player2, "takes home the win against", player1)
+
+  
+
+
+
+
+
+
+
+  
