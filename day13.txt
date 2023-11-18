@@ -1,0 +1,76 @@
+"""
+def letter_grade(int_value):
+  grade_available = 0
+  if int_value >= 90:
+    grade_available = "A+"
+    #print("A+")
+    print("") # space
+  elif int_value >= 80 and int_value <= 89:
+    grade_available = "B"
+    #print("B")
+    print("") # space
+  elif int_value >= 70 and int_value <= 79:
+    grade_available = "C"
+    #print("C")
+    print("") # space
+  elif int_value >= 60 and int_value <= 69:
+    grade_available = "D"
+    #print("D")
+    print("") # space
+  elif int_value >= 50 and int_value <= 59:
+    grade_available = "F"
+    #print("") # space
+    print("RETAKE THAT FAILURE OF A EXAM")
+  return grade_available
+"""
+print("Exam Grade Calculator")
+print("") # space
+print("") # space
+exam_class = input("What kind of exam did you take? ")
+print("") # space
+
+
+highest_possible_score = int(input("Maximum score available: "))
+print("") # space
+users_score = int(input("Your score: "))
+print("") # space
+print("") # space
+perc = users_score / highest_possible_score
+int_value = int(perc * 100)
+written_as_perc = float(perc * 100)
+rounded_written_as_perc = round(written_as_perc, 2)
+
+print("") # space
+print("") # space
+print("") # space
+
+
+if written_as_perc >= 90:
+  grade_available = "A+"
+  #print("A+")
+  print("") # space
+elif written_as_perc >= 80 and written_as_perc <= 89:
+  grade_available = "B"
+  #print("B")
+  print("") # space
+elif written_as_perc >= 70 and written_as_perc <= 79:
+  grade_available = "C"
+  #print("C")
+  print("") # space
+elif written_as_perc >= 60 and written_as_perc <= 69:
+  grade_available = "D"
+  #print("D")
+  print("") # space
+elif written_as_perc >= 0 and written_as_perc <= 59:
+  grade_available = "F"
+  #print("") # space
+  print("RETAKE THAT FAILURE OF A EXAM")
+  #print("") # space
+  #print("") # space
+  #print("") # space
+else:
+  grade_available = "UNAVAILABLE"
+  print("Please retake")
+
+
+print("You got", written_as_perc, "\b% which is a", grade_available)
