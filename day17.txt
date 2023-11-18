@@ -1,0 +1,140 @@
+from getpass import getpass as input
+
+R = "🪨"
+P = "📄"
+S = "✂️"
+
+counter = 0
+
+player1_points = 0
+
+player2_points = 0
+
+print(" ROCK   PAPER   SCISSORS")
+
+print("")  #space
+print("")  #space
+#🪨📄✂️
+print("Instructions: ")
+print("For your choice of weapon, input the first letter as follows:")
+print(""" 
+          R = rock  🪨
+          P = paper 📄
+          S = scissors ✂️ """)
+print("")  #space
+print("")  #space
+print("")  #space
+print("NOTE: AFTER BOTH PLAYERS END UP IN A DRAW 3 TIMES, THE COMPUTER WINS :)")
+
+print("")  #space
+print("")  #space
+print("")  #space
+
+while True:
+
+    user1 = input(" Player 1 Chooses ---> ")
+    player1 = "Player 1"
+
+    print("")  #space
+    print("")  #space
+
+    user2 = input(" Player 2 Chooses ---> ")
+
+    player2 = "Player 2"
+
+    print("")  #space
+    print("")  #space
+    print("")  #space
+    print("")  #space
+
+    # rock versus paper
+    if user1 == "R" and user2 == "P":
+      print(player1, "uses", R, " but this is futile against", player2, "\b's", P)
+      player2_points += 1
+      print("")  #space
+      print("")  #space
+      print("")  #space
+
+# paper versus rock
+    elif user1 == "P" and user2 == "R":
+      print(player1, "wraps", P, " all round the", R, " of", player2, "for a solid win!")
+      player1_points +=1
+      print("")  #space
+      print("")  #space
+      print("")  #space
+# paper versus scissors
+    elif user1 == "P" and user2 == "S":
+      print("Player 2 cuts Player1 wide open like an ill-guided blade missing its target.")
+      print("Player 1 loses. Sorry.")
+      player2_points += 1
+      print("")  #space
+      print("")  #space
+      print("")  #space
+# paper and paper draw
+    elif user1 == "P" and user2 == "P":
+      print("NOW GO DRAW ON THE PAPER TOGETHER YOU BEST OF BUDS")
+      counter += 1
+      print("")  #space
+      print("")  #space
+      print("")  #space
+
+# rock and rock draw
+    elif user1 == "R" and user2 == "R":
+      print("PUT THE WEAPONS DOWN. TAKE THEM BACK OUTSIDE. PLAY NICE.")
+      counter += 1
+      print("")  #space
+      print("")  #space
+      print("")  #space
+# rock versus scissors
+    elif user1 == "R" and user2 == "S":
+      print("Player 2 put up a good fight with some", S, ", but this game is won by Player 1 and their magnificient", R, " !")
+      player1_points += 1
+      print("")  #space
+      print("")  #space
+      print("")  #space
+      
+      
+# scissors and scissors draw
+    elif user1 == "S" and user2 == "S":
+      print("GO MAKE SOME SNOWFLAKES!")
+      counter += 1
+
+# scissors versus paper
+    elif user1 == "S" and user2 == "P":
+      print(player2, "is annihilated by the", S, " and might of", player1)
+      player1_points += 1
+
+      print("")  #space
+      print("")  #space
+      print("")  #space
+
+# scissors versus rock
+    elif user1 == "S" and user2 == "R":
+      print("In this game,", player2, "takes home the win against", player1)
+      player2_points += 1
+      print("")  #space
+      print("")  #space
+      print("")  #space
+
+
+  
+    else:
+      break
+
+    if player1_points <= 2 or player2_points <= 2:
+      continue
+
+    if counter >= 3:
+      print("COMPUTER WINS. HUMANS SUCK.")
+      break
+      
+    if player1_points >= 3 or player2_points >= 3:
+      print("WE GOT A WINNER SPINNER CODING GRINNER")
+
+    if player1_points >= 3:
+      print(player1, "TAKES HOME THE GOLD TODAY")
+      break
+    elif player2_points >= 3:
+      print("VICTORY BELONGS TO", player2)
+      break
+
