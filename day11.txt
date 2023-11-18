@@ -1,0 +1,105 @@
+"""
+60 SECONDS  = 1 MINUTE
+
+60 MINUTES = 1 HOUR
+
+24 HOURS = 1 DAY
+
+365 DAYS = 1 YEAR 
+
+7 DAYS PER WEEK 
+
+52 WEEKS = 1 YEAR 
+
+12 MONTHS = 1 YEAR 
+
+JAN 31 
+
+FEB 28
+
+FEB 31 
+ 
+APR 30 
+
+APR 31
+
+JUN 30
+
+JUL 31
+
+AUG 31
+
+SEP 30
+
+OCT 31
+
+NOV 30
+
+DEC 31 
+"""
+
+
+
+WEEK_HOURS = 7 * 24
+
+YEAR_WEEKS = 52
+
+
+
+# LEAP YEAR MUST BE ACCOUNTED FOR + 24 HOURS, + 1 DAY, 366 DAYS
+# 31, 536, 000 
+
+SECONDS = 60
+
+MINUTE = 60 
+
+HOUR = 60 
+
+DAY_TOTAL_HOURS = 24 
+
+YEAR_MONTHS = 12
+
+months_dictionary = {
+  "JAN" : 31, 
+  "FEB" : 28,
+  "MAR" : 31,
+  "APR" : 30, 
+  "MAY" : 31,
+  "JUN" : 30,
+  "JUL" : 31,
+  "AUG" : 31,
+  "SEP" : 30,
+  "OCT" : 31,
+  "NOV" : 30,
+  "DEC" : 31 
+}
+
+count_days = 0
+
+total_day_seconds = DAY_TOTAL_HOURS * HOUR * MINUTE
+
+print("Welcome!")
+print("") #space
+print("Find out how many seconds are in the year!")
+print("") #space
+print("") #space
+print("") #space
+print("") #space
+guess_year = int(input("How many seconds do you guess are in the year? "))
+
+for days in months_dictionary.values():
+  count_days = count_days + days
+
+year_seconds = total_day_seconds * count_days
+
+leap_year = year_seconds + total_day_seconds
+print("The total number of seconds in a year:", year_seconds)
+print("") #space
+print("") #space
+print("") #space
+print("") #space
+print("Unless it's a Leap Year!")
+print("In a Leap Year, there are", leap_year, "seconds.")
+
+
+
