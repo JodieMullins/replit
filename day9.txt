@@ -1,0 +1,35 @@
+print("Generation Identifier")
+
+print("") # space
+
+born = int(input("Which year were you born? "))
+
+print("") # space
+print("") # space
+
+if born >= 1883 and born <= 1900:
+  print("Lost Generation")
+  
+elif born >= 1901 and born <= 1927:
+  print("Greatest Generation")
+  
+elif born >= 1928 and born <= 1945:
+  print("Silent Generation")
+  
+elif born >= 1946 and born <= 1964:
+  print("Baby Boomers")
+  
+elif born >= 1965 and born <= 1980:
+  print("Generation X")
+  
+elif born >= 1981 and born <= 1996:
+  print("Millienials")
+  
+elif born >= 1997 and born <= 2012:
+  print("Generation Z")
+  
+elif born >= 2013 and born <= 2023:
+  print("Generation Alpha")
+  
+else: 
+  print("You're not picking any reasonable time period here.")
