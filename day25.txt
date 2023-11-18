@@ -1,0 +1,63 @@
+"""
+def pin_picker(number):
+  import random
+  pin = ""
+  for i in range(number):
+    pin += str(random.randint(0,9))
+  return pin
+
+
+create_pin = pin_picker(4)
+print(create_pin)
+"""
+
+def health_bar():
+  import random
+  roll6 = random.randint(1,6) #6-sided die roll
+  roll8 = random.randint(1,9) #8-sided die roll
+  hp = roll6 * roll8
+  print("Your randomly generated hp is equal to:", hp)
+  print() #space
+  print() #space
+  return hp
+  
+
+
+  
+ 
+  
+
+print("CHARACTER STAT GENERATOR")
+
+print()
+print()
+print()
+print()
+
+
+call_warrior = input("Name your warrior: ")
+health_bar()
+
+
+print()
+print()
+
+
+while True:
+  more_chars = input("Generate more stats: Y or N? ")
+  print() #space
+  print() #space
+  if more_chars == "Y" or more_chars == "y":
+    call_warrior2 = input("Name another warrior: ")
+    print() #space
+    print() #space
+    health_bar()
+    print()
+    print()
+  elif more_chars == "N" or more_chars == "n":
+    break
+  else: 
+    print("I do not recognize that answer.")
+    
+    
+
