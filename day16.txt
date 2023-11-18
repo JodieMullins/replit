@@ -1,0 +1,45 @@
+"""
+print("Adding Numbers Together")
+count = 0 
+while True: 
+  answer = int(input("Enter a number: "))
+  print("Adding it up")
+  count += answer
+  print ("Currently the total is:", count)
+  add_another = input("Add another? ")
+  if add_another == "no":
+    break
+print("Bye!")
+"""
+
+print("FILL IN THE LYRICS")
+
+print("") #space
+print("") #space
+print("") #space
+
+counter = 0
+while True:
+  print("Knock, knock, knockin' on ______'s ____")
+  print("") #space
+  answer = input(" ")
+  print("") #space
+  print("") #space
+  if answer != "Heaven door":
+    counter += 1
+    print("Not quite. Try again!")
+    print("") #space
+  
+  elif answer == "Heaven door":
+    final_count = counter + 1
+    print("THAT'S CORRECT!")
+    print("It only took you", final_count, "attempts to get it right!")
+    break
+
+
+
+
+
+
+
+
