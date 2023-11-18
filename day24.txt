@@ -1,0 +1,54 @@
+import random
+
+"""
+def which_cake(ingredient, base, coating):
+  if ingredient == "chocolate":
+    print("Mmmmmm, chocolate cake is amazing!")
+  elif ingredient == "broccoli":
+    print("You what mate?! Rethink your life right now!")
+  else: 
+    print("Yeah, that's great I suppose....")
+  print("So you want a", ingredient, "cake on a", base, "base with", coating, "on top?")
+
+
+user_ingredient = input("Pick an ingredient: ")
+user_base = input("What kind of base cake do you prefer? ")
+user_coating = input("Name your favorite cake topping: ")
+which_cake(user_ingredient, user_base, user_coating)
+"""
+
+def dice_sides(user_sides):
+  roll = random.randint(1, user_sides)
+  print("You rolled", roll)
+
+
+
+print("🎲 Infinity Dice 🎲")
+
+print("") #space
+print("") #space
+print("") #space
+
+user_sides = int(input("How many sides? "))
+print("") #space
+print("") #space
+dice_sides(user_sides)
+print("") #space
+print("") #space
+
+while True:
+
+  multi_roll = input("Roll again? ")
+  print("") #space
+  print("") #space
+
+  if multi_roll == "yes" or multi_roll == "Yes":
+    dice_sides(user_sides)
+    print("") #space
+    print("") #space
+  elif multi_roll == "no" or multi_roll == "No":
+    break
+ 
+
+
+    
